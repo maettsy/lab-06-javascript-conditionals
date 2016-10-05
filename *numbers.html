@@ -4,15 +4,15 @@
 <script>
 
 var number = prompt("Please enter a number");
-var thou = ;
-var hund = ;
-var tens = ;
-var ones = ;
+var thou = (number%1000);
+var hund = (number%100);
+var tens = (number%10);
+var ones = (number%1);
 
-console.log(thou + " thousands");
-console.log(hund + " hundreds");
-console.log(tens + " tens");
-console.log(ones + " ones");
+console.log((number - thou)/1000 + " thousands");
+console.log((thou - hund)/100 + " hundreds");
+console.log((hund - tens)/10 + " tens");
+console.log((tens - ones)/1 + " ones");
 
 </script>
 </body>
